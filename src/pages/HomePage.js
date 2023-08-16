@@ -18,34 +18,34 @@ function HomePage() {
       {inQuiz ? (
         <div className={styles.container}>
           <p className={styles.heading}>
-            Choose the subject that you'd like to take a quiz at
+            Choose the subject that you'd like to take a quiz at..
           </p>
           <button
-            onClick={() => handleButtonClick("biology")}
+            onClick={() => handleButtonClick("Biology")}
             className={styles.buttons}
           >
             Biology
           </button>
           <button
-            onClick={() => handleButtonClick("math")}
+            onClick={() => handleButtonClick("Math")}
             className={styles.buttons}
           >
             Math
           </button>
           <button
-            onClick={() => handleButtonClick("chemistry")}
+            onClick={() => handleButtonClick("Chemistry")}
             className={styles.buttons}
           >
             Chemistry
           </button>
           <button
-            onClick={() => handleButtonClick("english")}
+            onClick={() => handleButtonClick("English")}
             className={styles.buttons}
           >
             English
           </button>
           <button
-            onClick={() => handleButtonClick("physics")}
+            onClick={() => handleButtonClick("Physics")}
             className={styles.buttons}
           >
             Physics

@@ -1,5 +1,5 @@
 //import from react redux
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 //import setResult from redux action
 import { setResult } from "../redux/action";
 //import from react
@@ -13,7 +13,7 @@ function QuizItem({ question }) {
   const dispatch = useDispatch();
   const handleAnswerSelect = (answerIndex, choice) => {
     setSelectedAnswer(answerIndex);
-    if (question.correct == choice) dispatch(setResult());
+    if (question.correct === choice) dispatch(setResult());
   };
 
   return (

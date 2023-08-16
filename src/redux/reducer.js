@@ -2,12 +2,12 @@
 import * as constants from "./constants";
 
 const initialState = {
-  biology: [],
-  math: [],
-  chemistry: [],
-  english: [],
-  physics: [],
-  result: 0,
+  Biology: [],
+  Math: [],
+  Chemistry: [],
+  English: [],
+  Physics: [],
+  Result: 0,
 };
 
 export default function quizReducer(state = initialState, action) {

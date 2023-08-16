@@ -13,28 +13,28 @@ function QuizQuestions({ topic }) {
   const quiz = useSelector((state) => state.quizReducer);
   const { result } = useSelector((state) => state.quizReducer);
   const dispatch = useDispatch();
-  const [userAnswers, setUserAnswers] = useState({});
+  // const [userAnswers, setUserAnswers] = useState({});
   const [showResult, setShowResult] = useState(false);
-  const handleAnswerSelect = (questionId, answerIndex) => {
-    setUserAnswers((prevAnswers) => ({
-      ...prevAnswers,
-      [questionId]: answerIndex,
-    }));
-  };
+  // const handleAnswerSelect = (questionId, answerIndex) => {
+  //   setUserAnswers((prevAnswers) => ({
+  //     ...prevAnswers,
+  //     [questionId]: answerIndex,
+  //   }));
+  // };
   useEffect(() => {
     dispatch(getQuiz());
-  }, []);
+  }, [dispatch]);
 
   if (!quiz || Object.keys(quiz).length === 0) {
     return <p>Loading questions...</p>;
   }
 
   const questions = {
-    biology: quiz.biology,
-    math: quiz.math,
-    chemistry: quiz.chemistry,
-    english: quiz.english,
-    physics: quiz.physics,
+    Biology: quiz.Biology,
+    Math: quiz.Math,
+    Chemistry: quiz.Chemistry,
+    English: quiz.English,
+    Physics: quiz.Physics,
   };
   if (showResult)
     return (
@@ -51,7 +51,7 @@ function QuizQuestions({ topic }) {
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.heading}>Quiz {topic}</h2>
+      <h2 className={styles.heading}>{topic} quiz</h2>
       {questions[topic]?.map((question) => (
         <QuizItem
           key={question.id}

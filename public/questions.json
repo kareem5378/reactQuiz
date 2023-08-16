@@ -1,5 +1,5 @@
 {
-  "biology": [
+  "Biology": [
     {
       "id" : 1,
       "question": "What is the smallest unit of life?",
@@ -61,7 +61,7 @@
       "correct": "Kidney"
     }
   ],
-  "math": [
+  "Math": [
         {"id" : 1,
           "question": "What is the result of 4 + 2?",
           "choices": ["5", "6", "7", "8"],
@@ -119,7 +119,7 @@
           "correct": "Undefined"
         }
   ],
-  "chemistry": [
+  "Chemistry": [
       {"id" : 1,
         "question": "What is the atomic number of carbon?",
         "choices": ["6", "8", "10", "12"],
@@ -177,7 +177,7 @@
         "correct": "CH4"
       }
   ],
-  "english": [
+  "English": [
       {"id" : 1,
         "question": "What is the opposite of 'happy'?",
         "choices": ["Sad", "Angry", "Excited", "Nervous"],
@@ -230,7 +230,7 @@
         "correct": "Big"
       }
   ],
-  "physics": [
+  "Physics": [
       {"id" : 1,
         "question": "What is the SI unit of force?",
         "choices": ["Newton", "Joule", "Watt", "Ampere"],
