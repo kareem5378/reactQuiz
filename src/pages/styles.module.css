@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #313866;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  margin: -8px;
+}
+.heading {
+  font-size: 2rem;
+}
+.buttons {
+  background-color: #974ec3;
+  font-size: 1.5rem;
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 12px;
+  border: 1px solid black;
+  color: #fff;
+}
+.buttons:hover {
+  background-color: #fe7be5;
+}
